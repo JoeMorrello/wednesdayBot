@@ -1,9 +1,10 @@
 var SlackBot = require('slackbots');
 var Moment = require('moment');
 var fs = require('fs');
+require('dotenv').config();
 
 var bot = new SlackBot({
-    token: 'xoxb-378034060054-378035433878-4eBDcIqb76n5juTU0mfPpMPg',
+    token: process.env.TOKEN,
     name: 'wednesdaybot'
 });
 
